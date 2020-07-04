@@ -30,7 +30,7 @@ Prosper loans are a loan for borrowers and a financial asset for investors. The 
 Then we examine Prosper Loans from the perspective of a financial asset. The analysis shows Prosper Score risk ratings and term limits as predictive metrics for estimated returns. We then analyze the historical trends to build a framework on how to think about and invest in Prosper Loans in a predictable and replicable way.
 Lastly, the main limitations are that averages leave out some information and only provide a measure-of-center, which can be misleading. Additionally, the metrics on our framework only account for 15% of the predictive behavior in our model estimating estimated returns. But for this analysis, which is to build a basic framework for investment strategy, this limitation isn't important. The fact that our results are statistically significant and practically important is good enough for our use case.
 
-## File available
+## Files available
 
 - two datasets in CSV format, one for Prosper Loan data and the other for the associated metadata
 
@@ -42,7 +42,7 @@ Lastly, the main limitations are that averages leave out some information and on
 
 - an environment.yaml file, to reproduce the environment given a Conda installation to be able to run the code
 
-## Dataset
+## Datasets
 
 The dataset was provided by Udacity.com, a data analytics learning platform. It is also made available through the public API for Prosper Loans.
 
