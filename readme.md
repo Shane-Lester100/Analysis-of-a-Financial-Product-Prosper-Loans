@@ -1,37 +1,49 @@
-# Prosper Loans: Analyzing investment data for investment strategy
+# Analysis of a Financial Product: Prosper Loans
 
-## File available
+'Prosper Loans' is a technology investment company connecting loan requests directly to investors. Their purpose is to cut out banks as the middleman for loan requests. 
 
-- two datasets in csv format, one for prosper loan data and the other for the associated metadata
+This product analysis focuses on the customer base of requests and historical returns on investment. The purpose is to understand the customer base to know who will be receiving investment money and to look at historical data to see which metrics signify the maximum return with the minimum amount of risk. The final report suggests an investment strategy for choosing the optimal product.
 
-- an exploratory analysis in a jupyter notebook. This is a raw analysis that is just meant for exploring the data
+To view the exploratory analysis, [click here](https://nbviewer.jupyter.org/github/Shane-Lester100/Analysis-of-a-Financial-Product-Prosper-Loans/blob/master/Exploratory%20Analysis%20-%20Loans.ipynb).
 
-- an explanatory analysis, made to tell the data story and display the code for the chart generations and data manipulation
+To view the results as a Jupyter Notebook [click here](https://nbviewer.jupyter.org/github/Shane-Lester100/Analysis-of-a-Financial-Product-Prosper-Loans/blob/master/Explanatory%20Analysis%20Prosper%20Loans.ipynb).
 
-- a slidedeck in a pdf file. This is the final product of the analysis: describing the explanatory analysis in a cleaner fashion meant for an audience, using the polished charts throughout the presentation.
+To view the results as a PDF slideshow, [click here](https://github.com/Shane-Lester100/Analysis-of-a-Financial-Product-Prosper-Loans/blob/master/Prosper%20Loans_%20A%20New%20and%20Exciting%20Investment%20Option.pdf). 
 
-- an environmnet.yaml file, to reproduce the environment given a conda installation to be able to run the code
+Below is a summary of the exploratory and explanatory analysis with its limitations. How to set up the environment to reproduce the results is also below.  Lastly, where the dataset came from is described.
 
-## Dataset
-
-The dataset was provided by Udacity.com, a data analytics investment platform. It is also made available throught the public API for Prosper Loans.
-
-The dataset contains 113937 rows and 81 columns. The metadata is available as well as the original dataset in the sam folder as the document.
 
 ## Exploration
 
-First univariate variable were examined for number of investors, loan amounts, types of requests, terms, current status of loans, interest rates, risk scores, income levels/ credit scores/ and locations of borrowers, and distribution of returns.
+First, the analysis of univariate variable for the number of investors, loan amounts, types of requests, terms, the current status of loans, interest rates, risk scores, income levels/ credit scores/ and locations of borrowers, and distribution of returns occurs.
 
-Next risk scores and estimated returns were explored with locations. No valuable information was found here.
+Next, the analysis of risk scores and estimated returns are associated with location data. No valuable discoveries are here.
 
-Next time with interest rates, aprs, and estimated returns were analyzed together. They followed a clear trend which showed how macroeconomic variables relate to the the true cost to borrowers and true return of the investors. Next statistics were computed and scatterplots were built to describe the relationship of term limits and risk scores to return. Outcomes were a categorical variable. Although they were hard to visualize the story as better told through line graphs
+We then explore 'Prosper Loans' as a financial product: interest rates, APRs, and estimated returns are analyzed together. They follow a clear trend that shows how macroeconomic variables link the true-cost to borrowers to the true-return of the investor.
 
-Models were also built that showed statistically significant and practically important results given term limits and prosper score in estimating estimated returns. They only explained 15% of the model, which is expected because calculating estimated risk can get very sophisticated.
+Then, statistics are computed with scatterplots to describe the relationship between term limits and risk scores to estimated return. Outcomes were a categorical variable. The story is best through line graphs
+
+Linear models are made that show statistically significant practically-important results given term limits and prosper score in estimating estimated returns. They only explained 15% of the model, which is not surprising because calculating estimated risk can get very sophisticated.
 
 ## Explanation
+Prosper loans are a loan for borrowers and a financial asset for investors. The data story builds a profile of the borrower. It shows they are typical middle-income Americans with good credit that typically use these loans for debt consolidation.
+Then we examine Prosper Loans from the perspective of a financial asset. The analysis shows Prosper Score risk ratings and term limits as predictive metrics for estimated returns. We then analyze the historical trends to build a framework on how to think about and invest in Prosper Loans in a predictable and replicable way.
+Lastly, the main limitations are that averages leave out some information and only provide a measure-of-center, which can be misleading. Additionally, the metrics on our framework only account for 15% of the predictive behavior in our model estimating estimated returns. But for this analysis, which is to build a basic framework for investment strategy, this limitation isn't important. The fact that our results are statistically significant and practically important is good enough for our use case.
 
-Prosper loans can be viewed as a loan for borrowers or as a financial asset for investors. The data story first built a profile of the borrowers. It was found that they are typical middle income Americans with good credit that typically use these loans for debt consolidation.
+## File available
 
-Then we examined Prosper Loans as a financial assets. We examined Prosper Score risk ratings and term limits as predictive metrics for estimtated returns. We then analyzed the historical trends to build a framework on how to think about and invest in Prosper Loans in a predictiable and replicable way.
+- two datasets in CSV format, one for Prosper Loan data and the other for the associated metadata
 
-Lastly limitations were addressed. The main limitations were that averages were used, which although a good metric for the distributions in our dataset still is only a measure of center. An additional limitation was that the metrics on our framework only account for 15% of the predictive behavior in our model estimating estimated returns. This was addressed although it is to be expected: calculating estimated returns can be have very sophisticated modeling. But because the purposes of this analysis was to build a basic framework, this limitation isn't very important. The fact that our results are statistically significant and practically important is good enough for our use case.
+- an exploratory analysis in a Jupyter Notebook. This is a raw analysis that is just meant for exploring the data
+
+- an explanatory analysis, made to tell the data story and display the code for the chart generations and data manipulation
+
+- a slide-deck in a pdf file. This is the final product of the analysis: describing the explanatory analysis in a cleaner fashion meant for an audience, using the polished charts throughout the presentation.
+
+- an environment.yaml file, to reproduce the environment given a Conda installation to be able to run the code
+
+## Dataset
+
+The dataset was provided by Udacity.com, a data analytics learning platform. It is also made available through the public API for Prosper Loans.
+
+The dataset contains 113937 rows and 81 columns. The metadata is available as well as the original dataset in the sam folder as the document.
